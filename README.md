@@ -1,32 +1,31 @@
-1)Language and Framework: Python and Django
+-->Language and Framework: Python and Django
 
-2) Database: pgAdmin 4
+-->Database: pgAdmin 4
 
-3)SQL: postgresql
+-->SQL: postgresql
 
-4) Frontend Languages: HTML, CSS, Javascript
+-->Frontend Languages: HTML, CSS, Javascript
 
-5) Deployment : Railway
+-->Deployment : Railway
 
-6) Designing Database and ER Diagram:
+**Designing Database and ER Diagram:**
 
 
-There are 4 tables: User, Batch, Payment, Admission. The basic information is saved in user table along with batch ids. 4 batches are given. Payment details
-are stored in Payment Table. If the payment is successful the admission of the user is confirmed and stored in the admission tables.
+There are 4 tables: User, Batch, Payment, Admission. The basic information is saved in user table along with batch ids. 4 batches are given. Payment details for each user are stored in Payment Table. If the payment is successful the admission of the user is confirmed and stored in the admission tables.
 
-Tables are as follows:
+Tables are as follows in postgres:
 
-![userTable](https://user-images.githubusercontent.com/71372587/207452730-06e71f3b-e461-4077-bf7c-e8d4a0e2b289.png)
+![user_table2](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/a41e95c4-67e1-49a5-9233-72efd5de50db)
 
-![batchTable](https://user-images.githubusercontent.com/71372587/207452749-05a5a51e-3eaa-47d2-9c4e-c938b5090ba2.png)
+![batch_table2](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/b5da6a20-3025-4153-8c4d-61e02e0655e0)
 
-![paymentTable](https://user-images.githubusercontent.com/71372587/207452760-bd7886a8-7d87-41aa-9d64-01223f9ae72d.png)
+![payment_table2](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/937ccada-d93a-42e2-93cf-9ea9e478ad82)
 
-![admissionTable](https://user-images.githubusercontent.com/71372587/207452765-9e832d06-3c73-46e8-af27-19a265d3fd1f.png)
+![admission_table2](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/d610916d-9301-4f5d-81a5-42432ef8240e)
 
 ER Diagram:
 
-![Alt text](C:\Users\hp\OneDrive\Desktop\Grid\Yoga-Form\images\er_dig.png)
+![er_dig](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/9da82d7c-9556-459c-8e32-3bec95bccd99)
 
 2. Creating models:
 
