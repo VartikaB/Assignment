@@ -8,9 +8,8 @@
 
 5) Deployment : Railway
 
-Steps to build this Project:
+6) Designing Database and ER Diagram:
 
-1. Designing Database and ER Diagram:
 
 There are 4 tables: User, Batch, Payment, Admission. The basic information is saved in user table along with batch ids. 4 batches are given. Payment details
 are stored in Payment Table. If the payment is successful the admission of the user is confirmed and stored in the admission tables.
@@ -27,7 +26,7 @@ Tables are as follows:
 
 ER Diagram:
 
-![ER_Diagram](https://user-images.githubusercontent.com/71372587/207456330-d6060847-39cb-40c5-88fa-e7d0c5d374c0.png)
+![Alt text](C:\Users\hp\OneDrive\Desktop\Grid\Yoga-Form\images\er_dig.png)
 
 2. Creating models:
 
