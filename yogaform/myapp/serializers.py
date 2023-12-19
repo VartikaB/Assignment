@@ -42,6 +42,7 @@ class FormSerializer(serializers.Serializer):
         'Dear '+f_name+',\n\nThanks for enrolling in our yoga class.\nCharges: Rs 500/month\nKindly make the payment with the link given below. You can make the payment within 30 days of enrolment to confirm your admission.\n\nLink:'+url_test+'\n\nThank you and see you soon:)\n\nBest,\nVartika',
         'fakeg9450@gmail.com',[e],fail_silently=True)
         print("mail sent")
+        #Tried to sent mail , but it was not working , Due to time limit commented out whole feature
         # subject = 'welcome to GFG world'
         # message = f'Hi , thank you for registering in geeksforgeeks.'
         # email_from = settings.EMAIL_HOST_USER
@@ -71,10 +72,12 @@ class UpdateSerializer(serializers.Serializer):
         u_id=obj
         Payment.objects.create(user_id=u_id,amount=amt,payment_successful=p)
         url_test = 'http://localhost:8000/payment'
+
+        #Tried to sent mail , but it was not working , Due to time limit commented out whole feature
     #     send_mail('Yoga For Life - Payment Link',
     #    'Hey,\n\nThanks for enrolling in our yoga class once again.\nCharges: Rs 500/month\nKindly make the payment with the link given below. You can make the payment within 30 days of enrolment to confirm your admission.\n\nLink: '+url_test+'\n\nThank you and see you soon:)\n\nBest,\nSanya',
     #     'fakeg9450@gmail.com',[e],fail_silently=True)
-        # server.login('fakeg9450@gmail.com','V9450328091S')
+        
         # server.sendmail('fakeg9450@gmail.com',e);
         # print('Mil sent')
 
