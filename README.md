@@ -1,3 +1,5 @@
+**Tech Stack**
+
 -->Language and Framework: Python and Django
 
 -->Database: pgAdmin 4
@@ -5,8 +7,6 @@
 -->SQL: postgresql
 
 -->Frontend Languages: HTML, CSS, Javascript
-
--->Deployment : Railway
 
 **Designing Database and ER Diagram:**
 
@@ -33,67 +33,62 @@ Django models are created for the above mentioned tables and validation errors a
 
 3. Creating API:
 
-FormSerializer is created with the required fields to fetch the complex data and convert to json format and finally rendered into the database in the original format. Views 
-are used for processing the data. It defines the POST request.
+FormSerializer facilitates data retrieval from complex fields, transforming it into JSON format, then storing it in the original database structure. Views manage data processing, primarily defining the POST request for seamless functionality.
 
-Example of the Serializer and API:
-
-![Screenshot from 2022-12-14 03-38-22](https://user-images.githubusercontent.com/71372587/207455071-2e17be2a-be75-452a-af06-d4f4b8c5d3b0.png)
-
-![Screenshot from 2022-12-14 03-38-30](https://user-images.githubusercontent.com/71372587/207455101-23751842-2550-47de-971a-7d5c671d8ef5.png)
 
 4. API Testing with Postman
 
-![Screenshot from 2022-12-14 03-44-18](https://user-images.githubusercontent.com/71372587/207456124-395f849e-fb05-402e-a8b2-e741c83f9d7e.png)
+![postman](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/24e0861b-58dc-4fe0-81a8-90ef3eb70b72)
 
-5. Creating forms for frontend:
+5. Frontend form
 
-![Screenshot from 2022-12-14 03-50-48](https://user-images.githubusercontent.com/71372587/207457909-4cdde75b-ebd0-4708-a079-a059f7984b7b.png)
+![frontend](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/3ec6c341-41cf-497c-ad50-436cf1bc58aa)
 
-![Screenshot from 2022-12-14 03-50-51](https://user-images.githubusercontent.com/71372587/207457939-20d26b06-473c-4bc2-888d-ca71946a3fe5.png)
+![frontend1](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/b3b2bfa5-9a1d-4ed3-a864-6439e02d0c18)
 
-Form Validation
+![Form2](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/6d722213-a37a-4e33-aaa7-6e4be0931313)
 
-![Screenshot from 2022-12-14 03-51-03](https://user-images.githubusercontent.com/71372587/207457998-f95c7a38-7ed8-4301-a1a5-9418494b6a26.png)
 
-![Screenshot from 2022-12-14 03-51-21](https://user-images.githubusercontent.com/71372587/207458018-ed338bd5-8c36-4a9b-9d0e-aa032995331f.png)
+6. Response on Frontend 
 
-![Screenshot from 2022-12-14 03-52-19](https://user-images.githubusercontent.com/71372587/207458090-b980997b-5340-4274-87f5-95076ced25fe.png)
 
-![Screenshot from 2022-12-14 03-52-30](https://user-images.githubusercontent.com/71372587/207458109-e7af791d-d03b-49e4-b1b7-05da1bcff383.png)
 
-![Screenshot from 2022-12-14 03-52-43](https://user-images.githubusercontent.com/71372587/207458176-b8be0a84-c586-44f4-8cfd-ea4ea94293d7.png)
 
-6. The idea here is to register the user and send the payment link in mail so that user can pay the amount within 30 days and also the admission is
-confirmed after the completion of payment. 
+**On adding valid credentials maintaing all criteria**
 
-Assumption: Here the complete payment is stubbed function and it is always set to true. Hence all the registered users are admitted. The user registering 
-for next month is registered again for that month. 
+![Successful_form](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/31694b51-8348-4cf7-a317-d9499a939f51)
 
-Email is sent to the user using Django send_mail and Sendgrid API:
+**If age is not in the critera**
 
-![Screenshot from 2022-12-14 04-02-42](https://user-images.githubusercontent.com/71372587/207459643-76f2bcaf-13d4-404c-985c-156356b0a3d6.png)
+![Screenshot (118)](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/a4fabc81-2b1f-4f46-ac89-ee6d228a234d)
 
-![Screenshot from 2022-12-14 04-01-44](https://user-images.githubusercontent.com/71372587/207459534-72534894-f17f-43bf-8eb6-9114e7658eaa.png)
+**If conatct is not in the criteria**
 
-7. On clicking the link sent in mail:
+![Screenshot (119)](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/d9937411-d30c-452e-a32c-c3936f8185e1)
 
-HTTP Response 'Payment Successful' is generated.
+**If the entry already exist**
 
-![Screenshot from 2022-12-14 04-12-35](https://user-images.githubusercontent.com/71372587/207460805-89ed2bf8-7a65-49c2-8a50-40011c94853f.png)
+![Screenshot (120)](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/88647516-d983-49d9-9f13-1d73a8ee74e2)
 
-8. User Data is successfully stored in database:
+**If updation of batch is successful for registered user**
 
-![userTableData](https://user-images.githubusercontent.com/71372587/207460365-ee2b10dc-3b8e-423e-ae38-a98f11351ea5.png)
+![Succ_Updation](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/0210aa99-f86a-43d3-a109-c84de9f7bb6f)
 
-![paymentTableData](https://user-images.githubusercontent.com/71372587/207460391-f525a021-39bf-4a4b-acc1-bd21282247cd.png)
 
-![batchTableData](https://user-images.githubusercontent.com/71372587/207462217-e5624d5b-b68f-4e4b-9560-93027c520e13.png)
 
-![admissionTableData](https://user-images.githubusercontent.com/71372587/207462233-5bcadde7-482b-4a02-90a2-6b0ba5cf7aac.png)
+
+6. User Data is successfully stored in database:
+
+![adm_table1](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/a0d55d93-f83e-424a-ab88-a53fdb1f3374)
+
+![batch_table1](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/c4ff440a-3a0c-42cd-83f4-7ff75a6d1aad)
+
+![payment_table1](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/b63adafd-2846-40f2-84b0-33cd8a505e6c)
+
+![user_table1](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/eb3cf0e8-2ced-4657-b996-648dee71ebe0)
 
 Assumption:
 
-The complete payment function is a stubbed function. Right now the complete payment is always true and all the users are admitted. Complete payment should keep the track of link sent in mail and only if the user pays the amount, the user's admission is confirmed else the user details should not be added to admission.
+Data is currently added upon registration without payment validation. Enhancing this, user addition to the database will occur solely upon successful payment, ensuring a more robust process.
 
-Have a look at the demonstration of the Project: https://drive.google.com/drive/folders/1Cj-d0DuSZa7FcayrDO30TYk5yg6oT-cL?usp=share_link
+
