@@ -98,6 +98,15 @@ FormSerializer facilitates data retrieval from complex fields, transforming it i
 
 **Assumption:**
 
-Data is currently added upon registration without payment validation. Enhancing this, user addition to the database will occur solely upon successful payment, ensuring a more robust process.
+Data is currently added upon registration without payment validation. Enhancing this, user addition to the database will occur solely upon successful payment, ensuring a more robust process
+
+**Could Not deploy the backend**
+I was facing issues in deploying the backend (I will resolve the issue but due to time limit will have to submit as it is)
+![image](https://github.com/VartikaB/Assignment/assets/81951781/9d043956-178a-499e-9669-62523b45501b)
+
+**Frontend deployed link**
+I deployed frontend using vercel 
+link --> https://assignment-seven-flame.vercel.app/
+
 
 
