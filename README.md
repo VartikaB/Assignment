@@ -17,7 +17,12 @@
 
 There are 4 tables: User, Batch, Payment, Admission. The basic information is saved in user table along with batch ids. 4 batches are given. Payment details for each user are stored in Payment Table. If the payment is successful the admission of the user is confirmed and stored in the admission tables.
 
-Tables are as follows in postgres:
+
+**ER Diagram:**
+
+![er_dig](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/9da82d7c-9556-459c-8e32-3bec95bccd99)
+
+**Tables are as follows in postgres:**
 
 ![user_table2](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/a41e95c4-67e1-49a5-9233-72efd5de50db)
 
@@ -27,24 +32,20 @@ Tables are as follows in postgres:
 
 ![admission_table2](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/d610916d-9301-4f5d-81a5-42432ef8240e)
 
-ER Diagram:
-
-![er_dig](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/9da82d7c-9556-459c-8e32-3bec95bccd99)
-
-2. Creating models:
+**2. Creating models:**
 
 Django models are created for the above mentioned tables and validation errors are raised.
 
-3. Creating API:
+**3. Creating API:**
 
 FormSerializer facilitates data retrieval from complex fields, transforming it into JSON format, then storing it in the original database structure. Views manage data processing, primarily defining the POST request for seamless functionality.
 
 
-4. API Testing with Postman
+**4. API Testing with Postman**
 
 ![postman](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/24e0861b-58dc-4fe0-81a8-90ef3eb70b72)
 
-5. Frontend form
+**5. Frontend form**
 
 ![frontend](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/3ec6c341-41cf-497c-ad50-436cf1bc58aa)
 
@@ -53,7 +54,7 @@ FormSerializer facilitates data retrieval from complex fields, transforming it i
 ![Form2](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/6d722213-a37a-4e33-aaa7-6e4be0931313)
 
 
-6. Response on Frontend 
+**6. Response on Frontend**
 
 
 
@@ -81,7 +82,7 @@ FormSerializer facilitates data retrieval from complex fields, transforming it i
 
 
 
-6. User Data is successfully stored in database:
+**6. User Data is successfully stored in database:**
 
 ![adm_table1](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/a0d55d93-f83e-424a-ab88-a53fdb1f3374)
 
@@ -91,7 +92,7 @@ FormSerializer facilitates data retrieval from complex fields, transforming it i
 
 ![user_table1](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/eb3cf0e8-2ced-4657-b996-648dee71ebe0)
 
-Assumption:
+**Assumption:**
 
 Data is currently added upon registration without payment validation. Enhancing this, user addition to the database will occur solely upon successful payment, ensuring a more robust process.
 
