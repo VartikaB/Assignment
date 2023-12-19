@@ -81,7 +81,7 @@ FormSerializer facilitates data retrieval from complex fields, transforming it i
 
 ** Successful payment**
 
-![Screenshot_20221118_030642](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/dddea14e-cc2a-4463-934e-5e13b53a6dc4)
+![Screenshot (121)](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/978bd1ba-8fa4-451d-ac90-3baa0dc3b03a)
 
 
 
