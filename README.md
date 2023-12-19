@@ -8,6 +8,10 @@
 
 -->Frontend Languages: HTML, CSS, Javascript
 
+**Project Architecture**
+
+![Screenshot 2023-12-19 192244](https://github.com/VartikaB/Flexmoney_YogaForm/assets/81951781/a0be37a0-9de8-4646-a00c-a9647e56bbc4)
+
 **Designing Database and ER Diagram:**
 
 
